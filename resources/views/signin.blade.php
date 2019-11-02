@@ -1,12 +1,7 @@
 
-@include('include.navigation')
-@include('include.header')
 
-<?php
-////include navigation file
-//include('include/navigation.blade.php');
-//
-// ?>
+
+
 
 <html>
 <head>
@@ -37,13 +32,15 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
 
 }
 </style>
-<?php
-////include header file
-//include('include/header.blade.php');
-//
-// ?>
+
+
+
 </head>
+
 </body>
+
+@include('include.header')
+
 <!-- div container for header signin -->
 <div class="container-fluid  pt-5 mt-1"style="background-color:#E74C3C">  
 
@@ -82,16 +79,15 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
 				</div>
 			</form>
 
-
-
-        
 </div>
+
 	@include('include.footer')
-</div>
+
+</div>      <!-- for row div -->
 
 
 
-</div>
+</div>  <!-- for container div -->
 
 
 

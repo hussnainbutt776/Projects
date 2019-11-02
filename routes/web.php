@@ -16,10 +16,15 @@
 //});
 
 
-Route::get('/',function(){
-    return view('main_page');
-});
+//Route::get('/',function(){
+//    return view('main_page');
+//});
+//
+//Route::get('/signin',function(){
+//    return view('signin');
+//});
 
-Route::get('/signin',function(){
-    return view('signin');
-});
+
+Route::get('/','all_pages@get_main_page');
+Route::get('/signin','all_pages@get_signin');
+Route::get('/donate_form','all_pages@get_donate_form');
