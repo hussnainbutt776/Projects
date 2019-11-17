@@ -1,27 +1,16 @@
-
-
-
-
-
 <html>
 <head>
     <!-- jQuery library -->
 
-    <title>Registration form</title>
+    <title>Donar Registration form</title>
     <style>
         .size{
-
             width:25%;
             background-color: white;
             height: 3.5px;
             border: none;
         }
-        .red-hr{
-            width:25%;
-            background-color: #E74C3C;
-            height: 3.5px;
-            border: none;
-        }
+
         .form-container{
             background-color: white;
             border: .5px solid #eee;
@@ -30,8 +19,6 @@
             -webkit-box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
             -moz-box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
             box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
-
-
         }
     </style>
 
@@ -41,7 +28,7 @@
 
 </body>
 
-@include('include.header')
+@include('donar_folder.donar_include.header')
 
 <!-- div container for header signin -->
 <div class="container-fluid  pt-5 mt-1"style="background-color:#E74C3C">
@@ -49,7 +36,7 @@
     <div class="row">
 
         <div class="col-md-12 ">
-            <h1 class="text-center text-white">Register</h1>
+            <h1 class="text-center text-white">Update Record</h1>
             <hr class="size">
 
         </div>
@@ -65,7 +52,7 @@
     <div class="row ">
 
         <div class="col-md-6 offset-md-3 mb-5 form-container bg-light">
-            <h3 class="text-center text-danger">SignUp</h3>
+
             <hr class="red-hr">
             <form action="#"   onsubmit="return validation()" >
 
@@ -78,18 +65,18 @@
 
                 <div class="form-group ">
                     <label for="blood group">Blood Group</label>
-                        <select name="blood_group" id="blood_group" style="padding: 0 20px; width: 450px; height: 40px;" class="form-control demo-default text-center  " >
-                            <option value="">-- Select --</option>
-                            <option value="A+">A+</option>
-                            <option value="A-">A-</option>
-                            <option value="B+">B+</option>
-                            <option value="B-">B-</option>
-                            <option value="AB+">AB+</option>
-                            <option value="AB-">AB-</option>
-                            <option value="O+">O+</option>
-                            <option value="O-">O-</option>
+                    <select name="blood_group" id="blood_group" style="padding: 0 20px; width: 450px; height: 40px;" class="form-control demo-default text-center  " >
+                        <option value="">-- Select --</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
 
-                        </select>
+                    </select>
 
 
                 </div>
@@ -139,14 +126,14 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="submit" name="submit" value="submit" class="btn btn-danger btn-lg mt-3" 	autocomplete="off">
+                    <input type="submit" name="submit" value="update" class="btn btn-danger btn-lg mt-3" 	autocomplete="off">
                 </div>
 
             </form>
 
         </div>
 
-        @include('include.footer')
+        @include('donar_folder.donar_include.footer')
 
     </div>      <!-- for row div -->
 
@@ -158,8 +145,6 @@
 <script type="text/javascript">
     function validation() {
         var username = document.getElementById('fullname').value;
-
-
         if (username == "") {
             document.getElementById('full_name').innerHTML = " ** Please fill the username field";
             return false;
@@ -173,10 +158,7 @@
             return false;
         }
     }
-
 </script>
 
 </body>
 </html>
-
-

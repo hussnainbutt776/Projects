@@ -39,7 +39,7 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
 
 </body>
 
-@include('include.header')
+@include('receiver_folder.receiver_include.header')
 
 <!-- div container for header signin -->
 <div class="container-fluid  pt-5 mt-1"style="background-color:#E74C3C">  
@@ -81,7 +81,7 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
 
 </div>
 
-	@include('include.footer')
+	@include('receiver_folder.receiver_include.footer')
 
 </div>      <!-- for row div -->
 
